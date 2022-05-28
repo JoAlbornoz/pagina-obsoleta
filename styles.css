@@ -332,9 +332,12 @@ textarea:hover {
     }
 
     /*menú*/
+
     .top li{
         margin: 0;
+        padding:1em;
     }
+
     
     /*Portfolio*/
     .grid-item img{
