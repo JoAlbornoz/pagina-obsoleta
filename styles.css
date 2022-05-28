@@ -1,0 +1,453 @@
+*{
+    font-family: 'Inconsolata', monospace;
+}
+
+/*--------------------------------------HEADER Y FOOTER de PORTFOLIO,ABOUT,CONTACT----------------------------*/
+.top h1{
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+.top li{
+    display: inline-block;
+    margin: 1.5em;
+    height: 1.875em;
+    width: 5em;
+}
+
+.top a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.top a:hover{
+    color:rgb(138, 138, 138);
+    transition: .4s
+}
+
+.top nav{
+    text-align: center;
+    border-bottom-width: 0.063em;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(0, 0, 0);
+}
+
+header{
+    padding-top: 1.25em;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(253, 253, 253), rgb(197, 194, 195));
+}
+
+.footer{
+    text-align: center;  
+    height: 2.5em;
+	width: 100%;
+    border-top-width: 0.01em;
+	border-top-style: solid;
+	border-top-color: rgb(0, 0, 0);
+    padding: 0.5rem;
+    text-decoration:none;
+}
+
+.footer i{
+    color:black;
+    text-decoration:none;
+    margin:0.5rem;
+}
+
+#instagram:hover{
+    color:rgb(235, 30, 200);
+    transition: .4s
+}
+
+#facebook:hover{
+    color:rgb(51, 30, 235);
+    transition: .4s
+}
+
+#github:hover{
+    color:rgb(126, 4, 156);
+    transition: .4s
+}
+
+#gmail:hover{
+    color:rgb(223, 8, 8);
+    transition: .4s
+}
+
+.footer p{
+    font-size: 0.8rem; 
+}
+
+ /*-----------------------------------------INDEX: PAGINA DE INICIO---------------------------------------------*/
+
+.home{
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    margin-top: 3em;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+#nav-container{
+    background-color: black;
+    line-height: 6em;
+    margin-top: 6em;
+    animation: fadeIn;
+    animation-duration: 4s;
+}
+
+#nav-container a{
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+#nav-container a:hover{
+    color:rgb(83, 83, 83);
+    transition: .4s;
+}
+
+.footerindex{
+    margin-top: 2em;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+/*-----------------------------------------------------PORTFOLIO-----------------------------------------*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(360px,1fr)); 
+    gap: 1rem;
+}
+
+.grid-item{
+    background: rgba(0,0,0,0.3);
+    display: grid;
+    grid-template: 20em;
+    padding: 1em;
+    gap: 1em;
+    margin: 1em;
+}
+
+.grid-item img{
+    height: 15em;
+    width: 23em;
+    object-fit: cover;
+}
+
+.grid-item p{ 
+    height: 15em;
+    width: 23em;
+    margin: auto;
+    color: black;
+
+    text-align: center;
+    line-height: 15em;
+    
+    background: rgb(206, 206, 206);
+    transition: opacity .4s linear;
+    position: absolute;
+    opacity: 0;
+    font-weight: bold;
+    cursor: default;
+}
+  
+.grid-item:hover p{
+    opacity: 0.90;
+}
+
+/*----------------------------------------------ABOUT: info y gustos----------------------------------*/
+.about{
+    display: grid;
+    grid-template-rows: 8em 8em 8em 8em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap: 1em;
+    grid-template-areas:
+    "area1 area1 area2 area2 area2"
+    "area1 area1 area2 area2 area2"
+    "area1 area1 area3 area3 area3"
+    "area1 area1 area3 area3 area3";
+    margin:1.5em 5em 1.5em 5em;
+}
+  
+.descripcion{
+    background: rgba(100, 100, 100, 0.3);
+    grid-area: area1;
+}
+
+.descripcion img{
+    width: 50%;
+    padding: 1em;
+    background-color:white;
+    margin: 1.5em 6em auto 6em;
+}
+
+#nombre{
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+}
+
+.descripcion p{
+    text-align: center;
+    line-height: 1.3em;     
+    margin-left:3em;
+    margin-right:3em;
+    font-size: 1em;
+}
+  
+.minibio{
+    background: rgba(100, 100, 100, 0.3);
+    grid-area: area2;    
+}
+
+.minibio p{
+    text-align: left;
+    margin-top:2em;
+    margin-left:2em;
+    margin-right:2em;
+}
+
+.gustos{
+    background: rgba(100, 100, 100, 0.3);
+    text-align: center;
+    grid-area: area3;
+}
+
+/*------------------------------------------------------CONTACTO------------------------------------------*/
+.container p{
+    text-align: center;
+    margin: 3em 28em 3em 28em;
+    background-color: rgba(100, 100, 100, 0.3);
+    padding: 1rem;
+}
+
+#Obsoletaform{
+    position: relative;
+    width: 31.25rem;
+    margin: 3.125rem auto 0 auto;
+}
+  
+input{
+    font-size: 0.875em;
+    width: 29.375rem;
+    height: 3.125rem;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+       
+    border: solid 1px black;
+    border-bottom: none;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+  
+input:hover {
+    background: #c7c7c7;
+}
+  
+textarea{
+    width: 470px;
+    height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    font-size: 0.875em;
+    
+    border: solid 1px black;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out; 
+}
+  
+textarea:hover {
+    background: #c7c7c7;
+}
+  
+#mandar{
+    width: 31.375rem;
+    margin: -5px 0px 0px 0px;
+    
+    font-size: 0.875em;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px black;
+    border-top: none;
+  }
+  
+#mandar:hover {
+    color: #ffffff;
+    background: rgb(203, 178, 204);
+    border-top: solid 1px black;
+  }
+
+  /*-----------------------CELULAR-----------------------------*/
+@media screen and (max-width: 640px){ 
+
+    /*Index*/
+    .home {
+        display: inline-block;
+    }
+
+    .home img{
+        margin-left: 3em;
+        height: 20em;
+        width: 20em;
+    }
+
+    #nav-container{
+        line-height: 4em;
+        margin-top: 0;
+    }
+    
+    #nav-container a{
+        color: white;
+        text-decoration: none;
+        margin: 1.5rem;
+        font-size: 1em;
+    }
+
+    /*menú*/
+    .top li{
+        margin: 1em;
+    }
+    
+    /*Portfolio*/
+    .grid-item img{
+        height: 13em;
+        width: 21em;
+        padding-left: 0.3em;
+        justify-content: center;
+    }
+    
+    .grid-item p { 
+        height: 13em;
+        width: 21em;
+        margin-left: 0.29em;
+    }
+
+    /*About*/
+
+    .about{
+        grid-template-areas:
+       "area1 area1 area2 area2 area2"
+       "area1 area1 area2 area2 area2"
+       "area1 area1 area2 area2 area2"
+       "area1 area1 area3 area3 area3"
+       "area1 area1 area3 area3 area3"
+       "area1 area1 area3 area3 area3";
+        margin:1.5em 0.5em 1.5em 0.5em;
+        grid-gap: 0.3em;
+    }     
+    
+    .descripcion img {
+        width: 75%;
+        padding: 0.5em;
+        background-color:white;
+        margin: 2em 1em 0 0.7em;
+    }
+    
+    #nombre{
+        letter-spacing: 0.1em;
+    }
+    
+    .descripcion p{
+        text-align: center;
+        line-height: 1.5em;     
+        margin-left:1em;
+        margin-right:1em;
+        font-size: 1em;
+    }
+    
+    .minibio p{
+        text-align: left;
+        margin-top: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 0.91em;
+    }
+    
+    .otro{
+        background: rgba(100, 100, 100, 0.3);
+        text-align: center;
+        grid-area: area3;
+    }
+
+    .otro iframe{
+        width: 220px; 
+        height: 150px;
+    }
+    
+
+    /*Contact*/
+    .container p {
+        text-align: center;
+        margin: 3em 5em 3em 5em;
+    }
+
+    input {
+        width: 375px;
+        height: 3.125rem;
+    }
+
+    textarea {
+        width: 375px;
+        height: 110px;
+    }
+
+    #mandar{
+        width: 407px;
+    }
+
+}
+
+/*-------------------------TABLET----------------------------*/
+@media screen and (min-width: 640px) and (max-width: 1280px){
+     
+     /*Portfolio*/
+    .grid-item {
+        justify-content: center;
+    }
+
+    .grid-item p { 
+        margin-left: 3.2em;
+    }
+
+    /*about*/
+    .otro iframe{
+        width: 250px; 
+        height: 200px;
+    }
+
+    /*Contact*/
+    .container p {
+        text-align: center;
+        margin: 3em 20em 3em 20em;
+    }
+
+}
