@@ -315,7 +315,7 @@ textarea:hover {
     }
 
     .home img{
-        margin-left: 0;
+        margin-left: 0.5em;
         height: 20em;
         width: 20em;
     }
@@ -333,20 +333,20 @@ textarea:hover {
 
     /*menú*/
     .top li{
-        margin: 1em;
+        margin: 0.5em;
     }
     
     /*Portfolio*/
     .grid-item img{
         height: 13em;
-        width: 21em;
+        width: 18em;
         padding-left: 0.3em;
         justify-content: center;
     }
     
     .grid-item p { 
         height: 13em;
-        width: 21em;
+        width: 18em;
         margin-left: 0.29em;
     }
 
