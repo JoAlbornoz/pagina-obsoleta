@@ -370,7 +370,7 @@ textarea:hover {
         width: 75%;
         padding: 0.5em;
         background-color:white;
-        margin: 2em 1em 0 0.7em;
+        margin: 2em 1em 0 0.5em;
     }
     
     #nombre{
@@ -388,9 +388,9 @@ textarea:hover {
     .minibio p{
         text-align: left;
         margin-top: 1em;
-        margin-left: 1em;
-        margin-right: 1em;
-        font-size: 0.91em;
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+        font-size: 0.89em;
     }
     
     .otro{
@@ -399,11 +399,7 @@ textarea:hover {
         grid-area: area3;
     }
 
-    .otro iframe{
-        width: 220px; 
-        height: 150px;
-    }
-    
+    /*falta el iframe*/
 
     /*Contact*/
     .container p {
@@ -412,17 +408,17 @@ textarea:hover {
     }
 
     input {
-        width: 375px;
+        width: 325px;
         height: 3.125rem;
     }
 
     textarea {
-        width: 375px;
+        width: 325px;
         height: 110px;
     }
 
     #mandar{
-        width: 407px;
+        width: 357px;
     }
 
 }
@@ -440,10 +436,9 @@ textarea:hover {
     }
 
     /*about*/
-    .otro iframe{
-        width: 250px; 
-        height: 200px;
-    }
+
+    /*falta el iframe*/
+
 
     /*Contact*/
     .container p {
