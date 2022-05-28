@@ -307,7 +307,7 @@ textarea:hover {
   }
 
   /*-----------------------CELULAR-----------------------------*/
-@media screen and (max-width: 640px){ 
+@media screen and (min-width: 320px) and (max-width: 640px){ 
 
     /*Index*/
     .home {
@@ -315,7 +315,7 @@ textarea:hover {
     }
 
     .home img{
-        margin-left: 3em;
+        margin-left: 0;
         height: 20em;
         width: 20em;
     }
@@ -328,7 +328,6 @@ textarea:hover {
     #nav-container a{
         color: white;
         text-decoration: none;
-        margin: 1.5rem;
         font-size: 1em;
     }
 
