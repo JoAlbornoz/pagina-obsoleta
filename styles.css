@@ -400,7 +400,7 @@ textarea:hover {
     }
 
     .gustos p{
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .reproductores iframe{
@@ -443,6 +443,9 @@ textarea:hover {
     }
 
     /*about*/
+    .descripcion img {
+        margin: 2em 1em 0 4.5em;
+    }
 
     .reproductores iframe{
         width: 250px!important; 
